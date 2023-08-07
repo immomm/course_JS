@@ -3,7 +3,7 @@ module.exports = {
 		'browser': true,
 		'es2021': true
 	},
-	//'extends': 'eslint:recommended',
+	// 'extends': 'eslint:recommended',
 	'overrides': [
 		{
 			'env': {
@@ -23,7 +23,7 @@ module.exports = {
 	},
 	'rules': {
 		'indent': [
-			'error',
+			'warn',
 			'tab'
 		],
 		'linebreak-style': [
@@ -31,7 +31,7 @@ module.exports = {
 			'windows'
 		],
 		'quotes': [
-			'error',
+			'warn',
 			'single'
 		],
 		'semi': [
