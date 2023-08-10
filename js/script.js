@@ -12,16 +12,16 @@ function start() {
 
 function rememberMyFilms() {
 	for (let i = 0; i < 2; i++){
-		let a = prompt ('Один из последних просмотренных фильмов?', '');
+		let a = prompt ('Один из последних просмотренных фильмов?', '').trim();
 	
 		while(!a || a.length > 50){
-			a = prompt ('На сколько вы его оцените?', '');
+			a = prompt ('Один из последних просмотренных фильмов?', '').trim();
 		}
 	
-		let b = prompt ('На сколько вы его оцените?', '');
+		let b = prompt ('На сколько вы его оцените?', '').trim();
 	
 		while(!b || b.length > 50){
-			b = prompt ('На сколько вы его оцените?', '');
+			b = prompt ('На сколько вы его оцените?', '').trim();
 		}
 	
 		personalMovieDB.movies[a] = b;
@@ -46,7 +46,7 @@ function showMyDB() {
 
 function writeYourGenres() {
 	for (let i = 0; i < 3; i++){
-		personalMovieDB.genres[i] = prompt (`Ваш любимы жанр под номером ${i+1}`);
+		personalMovieDB.genres[i] = prompt (`Ваш любимы жанр под номером ${i+1}`).trim();
 	}
 }
 
